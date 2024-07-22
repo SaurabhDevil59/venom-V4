@@ -100,7 +100,7 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
             save_keys()
 
-            response = f"✅Key redeemed successfully! Access granted until: {users[user_id]} OWNER- @{OWNER_USERNAME}..."
+            response = f"✅Key redeemed successfully! Access granted until: OWNER- @{OWNER_USERNAME}..."
 
         else:
 
@@ -126,11 +126,11 @@ async def allusers(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
                     username = user_info.username if user_info.username else f"UserID: {user_id}"
 
-                    response += f"- @{username} (ID: {user_id}) expires on {expiration_date}\n"
+                    response += f"- @{username} (ID: {user_id}) expires on \n"
 
                 except Exception:
 
-                    response += f"- User ID: {user_id} expires on {expiration_date}\n"
+                    response += f"- User ID: {user_id} expires on \n"
 
     else:
 
@@ -202,7 +202,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
-    response = f(
+   
 
         "Welcome to the Flooding Bot by OWNER- @{OWNER_USERNAME}...! Here are the available commands:\n\n"
 
