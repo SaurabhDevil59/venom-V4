@@ -1,4 +1,4 @@
-#SAURABH LUNGARE MODZ😈😈
+#SAURABH LUNGARE MODZ
 
 import subprocess
 import json
