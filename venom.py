@@ -202,7 +202,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
-   
+   response = f(
 
         "Welcome to the Flooding Bot by OWNER- @{OWNER_USERNAME}...! Here are the available commands:\n\n"
 
@@ -224,7 +224,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
         "/stop - Stop the flooding process.\n"
 
-    
+   ) 
 
     await update.message.reply_text(response)
 
